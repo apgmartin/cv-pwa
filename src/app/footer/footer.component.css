@@ -1,0 +1,16 @@
+.footer-container {
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	margin-bottom: 0;
+	border-top: 1px dashed #000000;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+	background-color: #FFFFFF;
+}
+
+.footer-icon {
+	width: 100%;
+}

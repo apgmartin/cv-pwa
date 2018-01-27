@@ -1,0 +1,15 @@
+<div class="row">
+	<h2 class="col-12 text-center skills-viewer-title">
+		Skills
+	</h2>
+</div>
+
+<div class="row justify-content-center skills-viewer-links">
+	<div class="col-2 col-md-1 skill-box" [ngClass]="{'selected': (selectedSkill === skill)}" (click)="setSelectedSkill(skill)" *ngFor="let skill of skills">
+		<img class="skill-icon" src="{{skill.imageUrl}}">	
+	</div>
+</div>
+<div class="row skills-viewer-content justify-content-center">
+	<h3 class="col-12 text-center skill-title">{{selectedSkill.title}}</h3>
+	<p class="col-11 skill-description">{{selectedSkill.description}}</p>
+</div>
