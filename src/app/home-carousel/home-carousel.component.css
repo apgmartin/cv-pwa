@@ -1,9 +1,0 @@
-slide {
-	border-bottom: 0.2rem solid red;
-	z-index: 5;
-}
-
-slide img {
-	display: block;
-	width: 100%;
-}

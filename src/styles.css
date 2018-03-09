@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+}
+
+body {
+	margin: auto;
+	min-width: 320px;
+	background-color: #ffffff;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+carousel {
+	display: block;
+	padding: 0;
+	position: relative;
+  width: 100%;
+}
