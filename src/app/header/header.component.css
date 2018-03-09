@@ -1,9 +1,12 @@
 .header {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 0;
 }
 
 .title {
-	font-size: 1.6rem;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
 	margin: 0;
 }

@@ -1,0 +1,11 @@
+.about-me-image {
+	margin: auto;
+	width: 30%;
+	height: 30%;
+}
+
+.about-me-home h2 {
+	font-family: 'Architects Daughter', cursive;
+	text-decoration: none;
+	color: #000000;
+}
