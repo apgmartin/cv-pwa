@@ -9,7 +9,18 @@ html {
 body {
 	margin: auto;
 	min-width: 320px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
+	background: repeating-linear-gradient(
+	  90deg,
+	  #fefefe,
+	  #fefefe 100px,
+	  #031C1E2e 100px,
+	  #031C1E2e 101px,
+	  #fefefe 101px,
+	  #fefefe 178px,
+	  #031C1E2e 178px,
+	  #031C1E2e 179px
+	);
 }
 
 a.nostyle:link {
@@ -29,4 +40,6 @@ carousel {
 	padding: 0;
 	position: relative;
   width: 100%;
+  max-width: 550px;
+	margin: auto;
 }

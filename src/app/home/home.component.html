@@ -1,23 +1,23 @@
-<carousel>
+<!-- <carousel>
   <slide>
     <img src="assets/images/cray7.jpg" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    	<h3>Kräftskivan</h3>
+      <p>View from the summer crayfish party on the Swedish east coast</p>
     </div>
   </slide>
   <slide>
     <img src="assets/images/fjal.jpg" alt="Second slide">
     <div class="carousel-caption d-none d-md-block">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Fjällbacka</h3>
+      <p>A small traditional fishing village on the west coast of Sweden</p>
     </div>
   </slide>
   <slide>
     <img src="assets/images/umea.jpg" alt="Third slide">
     <div class="carousel-caption d-none d-md-block">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Umeå</h3>
+      <p>University city in the north of Sweden</p>
     </div>
   </slide>
 </carousel>
@@ -29,4 +29,74 @@
 		<app-about-me-home class="col-12 col-md-6"></app-about-me-home>
 		<app-projects-home class="col-12 col-md-6"></app-projects-home>
 	</div>
+</div> -->
+
+<div class="splash-home" [style.height.px]="windowInnerHeight + 1500">
+  <div class="container">
+    <div class="row justify-content-center top-nav col-md-8 offset-2 d-none d-md-flex">
+      <a href="mailto:alistairmartin@live.com" class="col text-center">
+        <img [style.height.px]="40" src="assets/icons/svg/ic_mail_outline_black.svg" height="50px">
+      </a>
+      <a href="https://www.linkedin.com/in/alistair-martin-4b4b6351/" class="col text-center">
+        <img [style.height.px]="40" src="assets/icons/png/linkedin.png">
+      </a>
+      <a href="https://github.com/apgmartin" class="col text-center">
+        <img [style.height.px]="40" src="assets/icons/png/github.png">
+      </a>
+    </div>
+    <div class="row justify-content-center">
+      <div class="home-image-row col-8 col-sm-7 col-md-5 col-lg-3">
+        <img src="assets/images/me.jpg" alt="profile picture" class="home-image" height="898" width="898">
+      </div>
+    </div>
+    <div class="row content content-1">
+      <h1 class="col-12">Hello! I'm Ali..</h1>
+      <p class="text-center">
+      Spicy jalapeno bacon ipsum dolor amet porchetta tenderloin bacon sausage swine frankfurter. Capicola burgdoggen cow rump short ribs tongue salami meatloaf swine tenderloin sirloin bacon hamburger frankfurter. Pancetta jowl chuck frankfurter alcatra landjaeger, buffalo ham hock chicken.
+      </p>
+    </div>
+  </div>
+
+  <div class="arc top-left" (click)="scrollToTop()">
+    <span href="#" class="splash-nav-link">
+      <img src="assets/icons/svg/ic_home_white.svg" height="45px">
+    </span>
+  </div>
+
+  <div [style.height.px]="menuArcHeight" [style.width.px]="menuArcWidth" class="arc top-right" (click)="toggleMenu($event)">
+    <span class="splash-nav-link">
+      <svg class="menu-svg" fill="#FFFFFF" height="45" viewBox="0 0 24 24" width="45" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </span>
+    <div class="arc-nav row">
+      <a href="#" class="arc-nav__link text-right col-12">About Me</a>
+      <a href="#" class="arc-nav__link text-right col-12">Projects</a>
+      <a href="#" class="arc-nav__link text-right col-12">Career</a>
+      <a href="#" class="arc-nav__link text-right col-12">Contact</a>
+    </div>
+  </div>
+
+  <div class="dots-container" [style.opacity]="arrowOpacity" #arrowContainer>
+    <!-- <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div> -->
+    <div class="arrow-1 arrow" [style.margin-bottom.rem]="arrowMarginBottom"></div>
+    <div class="arrow-2 arrow" [style.margin-bottom.rem]="arrowMarginBottom"></div>
+    <div class="arrow-3 arrow" [style.margin-bottom.rem]="arrowMarginBottom"></div>
+    <div class="arrow-4 arrow" [style.margin-bottom.rem]="arrowMarginBottom"></div>
+  </div>
+
+  
+
+
+</div>
+
+<div class="leaf-container" [style.top]="homeImageBottom">
+  <img src="assets/icons/png/leaf.png" alt="leaf" class="leaf" height="200" width="200" [style.transform]="leafRotation">
 </div>
